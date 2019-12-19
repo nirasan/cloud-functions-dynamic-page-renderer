@@ -4,7 +4,7 @@
   "description": "Functions that render dynamic pages with Google Cloud Functions",
   "main": "index.js",
   "scripts": {
-    "start": "functions-framework --target=helloWorld",
+    "start": "functions-framework --target=dynamicPageRenderer",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,7 +17,9 @@
     "url": "https://github.com/nirasan/cloud-functions-dynamic-page-renderer/issues"
   },
   "homepage": "https://github.com/nirasan/cloud-functions-dynamic-page-renderer#readme",
-  "dependencies": {},
+  "dependencies": {
+    "puppeteer": "^2.0.0"
+  },
   "devDependencies": {
     "@google-cloud/functions-framework": "^1.3.2"
   }
